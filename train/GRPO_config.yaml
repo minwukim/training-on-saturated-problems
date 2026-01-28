@@ -1,0 +1,38 @@
+model_name: "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B" # or your preferred model
+output_dir: "<YOUR DIRECTORY NAME FOR CHECKPOINTS>"
+run_name: "<YOUR NAME FOR WANDB SCREENING>"
+resume_from_checkpoint: False
+scale_rewards: "group"
+learning_rate: 1e-6
+beta: 0
+adam_beta1: 0.9
+adam_beta2: 0.99
+weight_decay: 0.1
+lr_scheduler_type: constant
+logging_steps: 1
+bf16: True
+bf16_full_eval: True
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 4
+gradient_accumulation_steps: 10
+gradient_checkpointing: True
+num_generations: 16
+max_prompt_length: 99999
+max_completion_length: 6000
+save_steps: 50
+max_grad_norm: 0.1
+report_to: wandb
+use_vllm: True
+vllm_mode: colocate
+max_steps: 2000
+log_completions: True
+evaluation_strategy: steps
+eval_steps: 6000
+eval_on_start: False 
+epsilon: 0.2
+epsilon_high: 0.4
+loss_type: "dapo"
+num_iterations: 2
+vllm_tensor_parallel_size: 2
+vllm_gpu_memory_utilization: 0.3
+truncated_cot_prompt_path: "../data/iteration1_target_acc_50.csv"

@@ -1,0 +1,14 @@
+model_name: "<YOUR MODEL OR CHECKPOINT PATH HERE>"  # e.g. "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B" 
+output_dir: "<YOUR OUTPUT DIRECTORY HERE>"    # e.g. "./eval_outputs"
+tensor_parallel_size: 2
+max_model_len: 34000
+temperature: 0.6
+top_p: 1.0
+top_k: -1                   # <0 disables top-k sampling in code
+max_response_tokens: 32000
+num_generations: 32
+seed: 1
+batch_size: 5
+conf_top_k: 20           
+
+
