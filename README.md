@@ -100,3 +100,16 @@ File names directly encode the construction iteration and target rollout accurac
 These datasets differ only in the saturation threshold and conditioning iteration, enabling controlled comparisons.
 
 ---
+
+
+
+## Bibtex
+```bibtex
+@article{kim2026failure-prefix-conditioning,
+  title={Training Reasoning Models on Saturated Problems via Failure-Prefix Conditioning},
+  author={Kim, Minwu and Shrestha, Safal and Ross, Keith},
+  journal={arXiv preprint arXiv:2601.20829},
+  year={2026}
+}
+```
+
