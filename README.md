@@ -4,6 +4,7 @@
 This repository contains the **official code** for the paper
 [***Training Reasoning Models on Saturated Problems via Failure-Prefix Conditioning***](https://arxiv.org/abs/2601.20829). 
 
+Huggingface link [here](https://huggingface.co/collections/guactastesgood/failure-prefix-conditioning)
 
 The code supports **evaluation**, **failure-prefix dataset construction**, and **RLVR training via GRPO**, using **TRL**, **vLLM**, **DeepSpeed**, and **Accelerate**.
 
